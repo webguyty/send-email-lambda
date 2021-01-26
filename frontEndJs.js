@@ -1,8 +1,4 @@
-const emailSubmit = document.getElementById("form");
-
-emailSubmit.addEventListener("submit", sendEmail);
-
-function sendEmail(e) {
+export default function sendEmail(e) {
   e.preventDefault();
   const name = document.getElementById("form_name"),
     email = document.getElementById("form_email"),
